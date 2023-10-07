@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  margin-top: 20vh;
+  margin-bottom: 50vh;
+}
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  box-shadow: -7px 0px 12px lightblue;
+  border-radius: 5px;
+}
+
+h1,
+#date {
+  text-align: center;
+  color: #00c0f0;
+  font-family: "Poppins", sans-serif;
+}
+#date {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: block; /* To make sure it takes up the full width */
+  margin: 10px auto 10px; /* Center horizontally */
+}
+.input-container {
+  display: flex;
+  position: relative;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-family: "Poppins", sans-serif;
+  background: #3b3c36;
+  color: #f9f9f9;
+}
+
+button#add {
+  background-color: #00c0f0;
+  border: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3b3c36;
+  color: #c0c0be;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+li span {
+  flex: 1;
+}
+
+button.delete {
+  color: #f44336;
+  border: none;
+  cursor: pointer;
+  background: #3b3c36;
+}
+button.edit {
+  color: #00c0f0;
+  margin-left: 7px;
+  border: none;
+  cursor: pointer;
+  background: #3b3c36;
+}
+
+button.edit:hover,
+.addbtn:hover {
+  color: #0099cc;
+}
+button.delete:hover {
+  color: #e53932;
+}
+#task:focus {
+  border: 2px solid #0099cc;
+  outline: none;
+}
+#task-list {
+  margin-top: 10px;
+}
+.update-controller {
+  display: none;
+}
+.input-controller {
+  position: relative;
+}
+.input-controller textarea {
+  background: #3b3c36;
+  color: #c0c0be;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 2px;
+  width: 100%;
+  height: 50px; /* Adjust the height as needed */
+  resize: none; /* Prevent textarea resizing */
+  line-height: 50px;
+}
+
+.textarea-container {
+  position: relative;
+}
+
+.edit-controller {
+  position: absolute;
+  top: 20px;
+  right: 8px;
+}
+
+.edit-controller button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.edit-controller i {
+  font-size: 16px; /* Adjust the font size as needed */
+  margin: 5px;
+}
+
+.save,
+.cancel {
+  background: #3b3c36;
+  color: #c0c0be;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  width: 75px;
+  margin-top: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.save:hover,
+.cancel:hover {
+  background: #c0c0be;
+  color: #3b3c36;
+  border: 1px solid #3b3c36;
+}
